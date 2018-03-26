@@ -1,0 +1,62 @@
+{
+  "name": "@devasatyam/cra-dotenv",
+  "version": "0.0.1",
+  "description": "Process .env files just like create-react-app does",
+  "main": "lib/index.js",
+  "bin": {
+    "cra-dotenv": "bin/cra-dotenv.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint . || exit 0",
+    "prettier": "prettier --write \"{lib, bin}/**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satyam/cra-dotenv.git"
+  },
+  "keywords": [
+    "create-react-app",
+    "dotenv",
+    "cra"
+  ],
+  "author": "Daniel Barreiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Satyam/cra-dotenv/issues"
+  },
+  "homepage": "https://github.com/Satyam/cra-dotenv#readme",
+  "dependencies": {
+    "cross-spawn": "^6.0.5",
+    "dotenv": "^5.0.1",
+    "dotenv-expand": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "jest": "^22.4.3",
+    "prettier": "^1.11.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:prettier/recommended"
+    ],
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "rules": {
+      "comma-dangle": [
+        1,
+        "always"
+      ]
+    }
+  }
+}
