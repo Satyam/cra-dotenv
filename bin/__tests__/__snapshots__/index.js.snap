@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic options help 1`] = `
+"
+  Usage: cra-dotenv [options] <command> [commandOptions...]
+
+  Runs a cli application using a set of .env files following the rules of create-react-app.
+
+  Options:
+
+    -V, --version      output the version number
+    -d, --development  sets NODE_ENV=development
+    -p, --production   sets NODE_ENV=production
+    -t, --test         sets NODE_ENV=test
+    -h, --help         output usage information
+
+The -d, -p and -t options are mutually exclusive.
+If none is given, the current value of NODE_ENV will be used.
+
+For example, for \\"production\\", the utility will try to locate
+the following files and merge the variables in them, in the following
+order of priority:
+
+1- .env.production.local
+2- .env.production
+3- .env.local
+4- .env
+
+The exception is for \\"test\\" where .env.local will never be checked.
+If no NODE_ENV is set, the first two will not be checked.
+The files must follow the rules of dotenv plus variable expansion:
+
+https://github.com/motdotla/dotenv#rules
+
+"
+`;
+
+exports[`basic options version 1`] = `
+"0.0.1
+"
+`;
