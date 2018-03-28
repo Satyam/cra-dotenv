@@ -33,6 +33,7 @@ https://github.com/motdotla/dotenv#rules
 `);
   })
   .action(function(command, commandOptions, cmd) {
+    debugger;
     const nodeEnv = ['development', 'production', 'test'].filter(
       val => cmd[val],
     )[0];

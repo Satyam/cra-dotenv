@@ -9,17 +9,14 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint . || exit 0",
-    "prettier": "prettier --write \"{lib, bin}/**/*.js\""
+    "prettier": "prettier --write \"{lib, bin}/**/*.js\"",
+    "debug": "node --inspect-brk node_modules/.bin/jest --runInBand"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Satyam/cra-dotenv.git"
   },
-  "keywords": [
-    "create-react-app",
-    "dotenv",
-    "cra"
-  ],
+  "keywords": ["create-react-app", "dotenv", "cra"],
   "author": "Daniel Barreiro",
   "license": "MIT",
   "bugs": {
@@ -45,9 +42,7 @@
     "trailingComma": "all"
   },
   "eslintConfig": {
-    "extends": [
-      "plugin:prettier/recommended"
-    ],
+    "extends": ["plugin:prettier/recommended"],
     "env": {
       "node": true
     },
@@ -55,10 +50,7 @@
       "ecmaVersion": 6
     },
     "rules": {
-      "comma-dangle": [
-        1,
-        "always"
-      ]
+      "comma-dangle": [1, "always"]
     }
   }
 }

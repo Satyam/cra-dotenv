@@ -1,9 +1,9 @@
 'use strict';
-const path = require('path');
-const execSync = require('child_process').execSync;
-
 jest.mock('fs');
 jest.mock('child_process');
+
+const path = require('path');
+const execSync = require('child_process').execSync;
 
 const bin = path.resolve(process.cwd(), 'bin/cra-dotenv.js');
 
@@ -18,8 +18,11 @@ describe('basic options', () => {
     expect(x('-V')).toMatchSnapshot();
   });
 });
+debugger;
 describe('no NODE_ENV', () => {
   it('should run', () => {
-    console.log(x('a b c'));
+    expect(() => {
+      console.log(x('a b c'));
+    }).toThrow();
   });
 });
