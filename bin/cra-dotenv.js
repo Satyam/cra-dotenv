@@ -1,3 +1,3 @@
 #! /usr/bin/env node
-const cli = require('../cli');
+const cli = require('../lib/cli');
 cli(process.argv, process.env);

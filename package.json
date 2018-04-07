@@ -39,18 +39,6 @@
   },
   "prettier": {
     "singleQuote": true,
-    "trailingComma": "all"
-  },
-  "eslintConfig": {
-    "extends": ["plugin:prettier/recommended"],
-    "env": {
-      "node": true
-    },
-    "parserOptions": {
-      "ecmaVersion": 6
-    },
-    "rules": {
-      "comma-dangle": [1, "always"]
-    }
+    "trailingComma": "es5"
   }
 }
