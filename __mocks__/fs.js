@@ -1,8 +1,6 @@
-'use strict';
-
 const path = require('path');
-
-const fs = jest.genMockFromModule('fs');
+debugger;
+const fs = require.requireActual('fs');
 
 function readFileSync(path, options) {
   console.log('readFileSync', path);

@@ -16,7 +16,11 @@
     "type": "git",
     "url": "git+https://github.com/Satyam/cra-dotenv.git"
   },
-  "keywords": ["create-react-app", "dotenv", "cra"],
+  "keywords": [
+    "create-react-app",
+    "dotenv",
+    "cra"
+  ],
   "author": "Daniel Barreiro",
   "license": "MIT",
   "bugs": {
@@ -34,8 +38,8 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "jest": "^22.4.3",
-    "mock-spawn": "^0.2.6",
-    "prettier": "^1.11.1"
+    "prettier": "^1.11.1",
+    "spawn-mock": "^1.0.0"
   },
   "prettier": {
     "singleQuote": true,
